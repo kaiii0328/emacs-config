@@ -15,6 +15,7 @@
 
 (load-theme 'solarized-dark t)
 
+
 (let ((minver "25.1"))
   (when (version< emacs-version minver)
     (error "Your Emacs is too old -- this config requires v%s or higher" minver)))
@@ -253,6 +254,9 @@ Up^^             Down^^           Miscellaneous           % 2(mc/num-cursors) cu
 (use-package magit
   :ensure t)
 
+(setq initial-buffer-choice (lambda ()
+                                (get-buffer-create "*dashboard*")
+                                (dashboard-refresh-buffer)))
 
 (provide 'init)
 
