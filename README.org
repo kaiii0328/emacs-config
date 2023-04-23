@@ -1,5 +1,6 @@
 ** emacs config 
 
 - set up emacs client-server in .bashrc
+  - add alias in .bashrc
 - in emacs, package install use-package, solarized-theme
 - copy init.el under folder .emacs.d/
