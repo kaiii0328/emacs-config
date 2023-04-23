@@ -1,6 +1,10 @@
 ** emacs config 
 
 - set up emacs client-server in .bashrc
-  - add alias in .bashrc
+  - set up "emacs --daemon" in Starting Applications
+  - type "emacsclient -c -a 'emacs'" in terminal
+  - add alias in .bashrc: alias = "emacsclient -c -a 'emacs'"
+  - setup icon: 1) sudo cp /usr/bin/applications/emacs.desktop /usr/bin/applications/emacsclint.desktop
+                2) change name and commands in emacsclinet.desktop
 - in emacs, package install use-package, solarized-theme
 - copy init.el under folder .emacs.d/
